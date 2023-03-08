@@ -1,0 +1,127 @@
+
+body{
+    font-size: 16px;
+    color: white;
+    background: #F8F9F9;  
+    font-family: 'Oxygen', sans-serif;
+}
+
+.navbar-toggler {
+    border: none;
+    width: 1em;
+    float: right;
+  }
+
+.container .jumbotron{
+    background: url("/static/img/1014.jpg") no-repeat;
+    height: 540px;
+    box-shadow: 0 0 50px #011BFE;  
+    /*border: 2px solid #3F0C1F;*/
+    padding: 40px 0 80px 0;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+#aboutMeImage {
+    background: url("/static/img/motivation3 (1).png");/* About Me */
+        width: 270px;
+        height: 212px;
+        border-radius: 20px;
+}
+
+#aboutMeArticle{
+    /* padding: 130px 50px 80px 200px;
+    clear:right;*/
+    padding: 10px 50px 20px 50px;
+}
+#intro{
+    font-size: 1.5em;
+}
+#imageSkills{
+    background: url("/static/img/XSskills.png") no-repeat;
+    width:300px;
+    height: 200px;
+    margin-left:0;
+    box-shadow: 0 0 80px #40E0D0;  
+    border-radius: 20px;
+}
+#skills{
+    padding: 80px 0 0 0;
+    color: #0047AB;
+}
+h2 #skillsHeader{
+    font-size: 0.7em;
+    padding-bottom: 30px;
+}
+#skillsArticle ul {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color:#5F6A6A;
+}
+#skills_list{
+    padding: 0 10px 0 70px
+}
+#skillsParagraph {
+    font-size: 1.1em;
+    color:#0047AB;
+    padding: 0 10px 0 70px
+}
+
+#imageHobbies{
+    background: url("/static/img/soccer-123.jpg") no-repeat;
+    width:300px;
+    height: 200px;
+    margin-left:0;
+    box-shadow: 0 0 80px #40E0D0;  
+    border-radius: 20px;
+}
+#hobbies{
+    padding: 0 0 110px 0;
+    color: #0047AB;
+}
+h2 #hobbiesHeader{
+    font-size: 0.7em;
+    padding-bottom: 30px;
+}
+#hobbiesArticle ul {
+    margin-top: 5px;
+    font-size: 1.1em;
+    color:#5F6A6A;
+}
+#hobbies_list{
+    padding: 0 10px 100px 70px
+}
+#hobbiesParagraph {
+    font-size: 1.1em;
+    color:#0047AB;
+    padding: 0 10px 0 70px
+}
+
+#foo1 {
+    color: white;
+  }
+
+#edu {
+    border-radius: 20px;
+    box-shadow: 0 0 50px #C0392B;
+}
+#git {
+    border-radius: 20px;
+    box-shadow: 0 0 50px #C0392B;
+}
+
+#touch {
+    margin:30px 0 10px 0;
+    color: rgb(0,0,0);
+    text-align: center;
+}
+
+#touch2 {
+    color: rgb(0,0,0);
+}
+
+
+#heading-journey {
+    padding: 50px 0 100px 0;
+    color: black;
+}

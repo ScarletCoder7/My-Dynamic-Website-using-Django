@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Contact Me |{% endblock title %}
+
+{% block nav %}
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/contact">Contact Me</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://github.com/ScarletCoder7?tab=repositories" target="_blank">GitHub</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/education">My Journey</a>
+    </li>
+</ul>
+<a class="btn btn-danger" href="tel:+91-9641690715" role="button">Phone No.: 9641690715</a>
+<a class="btn btn-danger mx-2" href="mailto:shrinjitsharma008@gmail.com" role="button">Email: shrinjitsharma008@gmail.com</a>
+{% endblock nav %}
+
+{% block body %}
+<div class="container-fluid px-0"> <!--container-fluid extends the width of an image to fit into the whole width of the window--> <!--px stands for padding in x axis-->
+    <img src="{% static 'img/clevertap-welcome-message-header-image-e1551339676374.jpg' %}" class="d-block w-100"> <!--my stands for margin y axis-->
+</div>
+<div id="touch">
+<h2>Get in touch</h2>
+</div>
+<div class = "container my-10" id="touch2">
+    <form method="post" action="/contact">
+    {% csrf_token %}    
+        <div class="mb-3">
+            <label for="name" class="form-label">Name: </label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address: </label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email id">
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number: </label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+
+        <div class="mb-3">
+            <label for="desc" class="form-label">Please type here:</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc"></textarea>
+        </div>
+        <center><button class="btn btn-success" type = "Submit">Submit</button><center><!--class="btn btn-primary" for primary bootstrap button design-->
+    </form>
+</div>
+
+<div>
+&nbsp;
+</div>
+{% endblock body %}
+

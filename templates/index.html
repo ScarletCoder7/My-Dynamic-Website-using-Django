@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Home |{% endblock title %}
+
+{% block nav %}
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#main-content">About Me</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#skills">Technical Skills</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/education">My Journey</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="https://github.com/ScarletCoder7?tab=repositories" target="_blank">GitHub</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#hobbies">Hobbies</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Me</a>
+    </li>
+</ul>
+{% endblock nav %}
+
+
+{% block body %}
+<div id="main-content" class="container">
+    <div class="jumbotron mx-10 py-50">
+        <table>
+            <tr>
+                <center>
+                    <div id="aboutMeImage"></div>
+                    <center>
+            </tr>
+            <tr>
+                <article id="aboutMeArticle">
+                    <header>
+                        <h2>
+                            <center>About Me<center>
+                        </h2><br />
+                        <p id="intro">Hi, I'm Shrinjit Kr. Sharma</p>
+                    </header>
+
+                    <body id="about">
+                        I'm an engineer, passionate about learning the latest software technologies and developing
+                        applications.
+                    </body>
+                </article>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="skills"> 
+    <table>
+        <tr>
+            <center>
+                <div id="imageSkills"></div>
+            </center>
+        </tr>
+        <tr>
+            <div id="skillsArticle">
+                <header>
+                    &nbsp;
+                    <h2 id="skillsHeader">
+                        <center>Technical Skills</center>
+                    </h2><br />
+                    <p id="skillsParagraph">These are the technical skills which I possess:</p>
+                </header>
+                <div id="skills_list">
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Django</li>
+                        <li>HTML & CSS</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </tr>
+</div>
+
+<div id="hobbies"> 
+    <table>
+        <tr>
+            <center>
+                <div id="imageHobbies"></div>
+            </center>
+        </tr>
+        <tr>
+            <div id="hobbiesArticle">
+                <header>
+                    &nbsp;
+                    <h2 id="hobbiesHeader">
+                        <center>My Hobbies</center>
+                    </h2><br />
+                    <p id="hobbiesParagraph">These are my hobbies:</p>
+                </header>
+                <div id="hobbies_list">
+                    <ul>
+                        <li>Playing football</li>
+                        <li>Collecting football clubs' jerseys</li>
+                        <li>Listening to rock music</li>
+                        <li>Playing video games</li>
+                        <li>Software Programming</li>
+                    </ul>
+                </div>
+            </div>
+        </tr>
+</div>
+
+
+<div class="row" id="row1">
+    <div class="col-sm-6">
+        <div class="card  text-dark bg-light mb-3 border-0">
+            <div class="card-body">
+                <a href="/education"><img id="edu" class="card-img-top" src="{% static 'img/Software-Engineer-1.jpg' %}" alt="Card image cap"></a>
+                &nbsp;
+                <center><a href="/education" class="btn btn-success">My Journey</a></center>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card  text-dark bg-light mb-3 border-0">
+            <div class="card-body">
+                <a href="https://github.com/ScarletCoder7?tab=repositories" target="_blank"><img id="git" target="_blank" class="card-img-top" src="{% static 'img/GitHub (1).jpg' %}" alt="Card image cap"></a>
+                &nbsp;
+                <center><a href="https://github.com/ScarletCoder7?tab=repositories" target="_blank"
+                        class="btn btn-success">GitHub</a></center>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
